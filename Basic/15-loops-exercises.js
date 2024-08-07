@@ -8,11 +8,30 @@ https://www.twitch.tv/videos/2212289583?t=00h17m45s
 
 // 1. Crea un bucle que imprima los números del 1 al 20
 
+for (let i = 1; i<=20; i++){
+    console.log(i)
+}
+
 // 2. Crea un bucle que sume todos los números del 1 al 100 y muestre el resultado
+
+let numero =1
+for (let i = 1; i <= 100; i++){
+    numero += i
+}
+console.log(numero)
 
 // 3. Crea un bucle que imprima todos los números pares entre 1 y 50
 
+for(let i = 1; i <= 50; i++){
+    if(i % 2 == 0) console.log(i)
+}
+
 // 4. Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola
+
+let arrayNombres = ['Juan', 'Pedro', 'Mariano', 'Agustin', 'Diego']
+for (let nombre of arrayNombres){
+    console.log(nombre)
+}
 
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
 
