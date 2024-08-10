@@ -35,12 +35,57 @@ for (let nombre of arrayNombres){
 
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
 
+let vocales = ['a', 'e', 'i', 'o', 'u', 'á','é','í','ó','ú']
+let cadena = "Hola, ¿qué tal estás? Esto es una cadena de caracteres"
+let contador = 0
+for (let caracter of cadena.toLowerCase()){
+    if (vocales.includes(caracter)) {
+        contador ++
+    }
+}
+console.log("La cantidad de vocales es: " + contador)
+
+
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+
+let numberArray = [2, 4, 6, 7, 9, 11, 14]
+let res = 0
+for(let i=0; i<numberArray.length; i++){
+    if(i==0) res = numberArray[i]
+    else res *= numberArray[i]   
+}
+console.log(`El resultado es ${res}`)
 
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
 
+for(let i=1; i<=10; i++){
+    
+    console.log(i + ' * 5 = ' + i*5 )
+}
+
 // 8. Usa un bucle para invertir una cadena de texto
+
+let cadena2 = "Dabale arroz a la zorra el abad"
+let cadenaInvertida = ""
+for (let i = cadena2.length-1; i>=0; i--){
+    cadenaInvertida += cadena2[i]
+}
+console.log(cadenaInvertida)
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
 
+let arrayFibonacci = []
+for (let i = 0; i<10; i++){
+    if(i==0 || i==1) arrayFibonacci.push(i)
+    else arrayFibonacci.push(arrayFibonacci[i-2]+arrayFibonacci[i-1])
+    console.log(arrayFibonacci[i])
+}
+
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+
+let primerArray = [18, 7, 6, 22, 134, 11, 14, 5, 3, 9, 33]
+let arrayMayores = new Array
+for (numero of primerArray){
+    if (numero > 10) arrayMayores.push(numero)
+}
+console.table(arrayMayores)
