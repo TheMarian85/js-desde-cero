@@ -62,7 +62,7 @@ class PersonWithMethod {
     }
 
     walk() {
-        console.log("La persona camina.")
+        console.log(`La persona cuyo nombre es ${this.name} camina.`)
     }
 
 }
